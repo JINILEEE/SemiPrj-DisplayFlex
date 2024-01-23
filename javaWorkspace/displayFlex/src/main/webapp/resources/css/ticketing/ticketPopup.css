@@ -1,0 +1,70 @@
+#ticketPopup {
+    display: grid;
+    grid-template-rows: 50px 350px 150px;
+    background: #F2F0E5;
+    border: 1px solid black;
+}
+
+#ticketPopup > div:first-child{
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ticketPopup > div:first-child > span {
+	color: white;
+	font-size: 30px;
+}
+
+#ticket {
+    display: grid;
+    grid-template-columns: 3.8fr 6.5fr;
+}
+
+#movieImg {
+	border-right: 1px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#movieImg > img {
+	width: 187px;
+    height: 280px;
+    object-fit: cover;
+}
+
+#ticketInfo > table {
+	padding: 30px 15px 30px 15px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+#logo {
+    border-top: 1px solid black;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo > img {
+	width: 400px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#ticketInfo td {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#ticketInfo th {
+	color: #ada7a7;
+}
+
+#ticketNo, #payAmount {
+    color: #CD4748;
+}

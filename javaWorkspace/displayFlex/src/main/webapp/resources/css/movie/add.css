@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+.title:first-child {	
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.title:not(:first-child) {
+	margin-left: 51.8125px;
+}
+
+
+.add-form {
+	padding: 100px;
+	width: 84em;
+	margin: auto;
+}
+
+.bg-w {
+	background-color: white;
+}
+.title-container {
+	width: 60%;
+}
+
+.star {
+	font-size: 18px;
+	font-weight: 900;
+	color: orangered;
+}
+
+form {
+	width: 65em;	
+}
+
+.custom-form:focus {
+	border: 0.1em solid #1a1a1a;
+	box-shadow: none;
+}
+
+ table {
+	margin: auto;
+	width: 100%;
+}
+
+.w-60 {
+	width: 60%;
+}
+
+td {
+	height: 70px;
+}
+
+
+#moive-search-result {
+	width: 280.27px;
+	max-height: 150px;
+	position: absolute;
+	z-index: 10;
+	background-color: white;
+	border-end-start-radius: 5px;
+	border-end-end-radius: 5px;
+	overflow-y: auto;
+}
+
+.list-group-item:hover {
+	background-color: #dedede;
+	cursor: pointer;
+}
+
+input {
+	padding: 15px;
+	width: 75%;
+	height: 2em;
+	border-radius: 40px;
+}
+
+input[type=submit] {
+	width:200px;
+	height: 40px;
+	padding: 10px;
+	text-align: center;
+	background-color: #abc95f;
+}
+input[name=actor] {
+	width: 100%;
+}
+
+input[name=rate] {
+	width: 80%;
+}
+
+.story {
+	padding: 1.5em;
+	background-color: #fffbdc;
+	width: 90%;
+}
+
+.still-image > div {
+	width: 90%;
+}
+
+
+.fd-cr {
+	flex-direction: column-reverse;
+}
+
+.btn-success {
+	background-color: #abc95f;
+	border-color: #abc95f;
+}
+
+.btn-success:hover {
+	background-color: #84a533;
+	border-color: #84a533;
+	transform: scale(1.01);
+}

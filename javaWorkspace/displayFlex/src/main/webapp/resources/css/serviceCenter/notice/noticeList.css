@@ -1,0 +1,224 @@
+main {
+    width: 75em;
+    margin: auto;
+    /* padding: 100px; */
+}
+
+#contents {
+    height: auto;
+    padding: 10px 60px 60px 60px;
+    background-color: white;
+    /* text-align: center;  */
+}
+
+div#title_top {
+    /* margin: 0px 0px 20px; */
+    padding: 10px 0 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+#contents > #title_top {
+    /* margin-bottom: 20px; */
+    border-bottom: 1px solid #EEE;
+}
+
+#contents > #title_top > h1 {
+    margin-left: 20px;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+#title_top button {
+    margin-right: 20px;
+    height: 40px;
+    line-height: 35px;
+    /* padding-bottom: 4px; */
+    /* margin: 0 3px; */
+    min-width: 110px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 2px solid #7c0000;
+    font-size: 15.5px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgba(121, 0, 0, 0.326);
+}
+
+#contents > #tab_tit {
+    grid-column: span 3;
+}
+
+#contents > #tab_tit nav{
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 24px;
+    border-bottom: 1px solid #EEE;
+    padding: 17px 0px 17px;
+    margin-bottom: 15px
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(113, 113, 113);
+    font-size: 17px;
+}
+
+legend{
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+#search_wrap1 {
+    width: 92.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid rgb(255, 246, 219);
+    background-color: rgb(255, 246, 219);
+    padding: 22px 22px;
+    text-align: center; /* 자식 요소들을 가운데 정렬 */
+    margin: 17px auto;
+}
+
+select {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 18px;
+    font-size: 13px;
+    border: 1px solid #DDD;
+    margin: 0 20px;
+}
+
+#search_wrap1 input[type="text"] {
+    width: 440px;
+    margin-right: 8px;
+}
+
+input[type="text"] {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 18px;
+    font-size: 13px;
+    border: 1px solid #DDD;
+}
+
+#search_wrap1 .btn_col2 {
+    /* display: inline-block; */
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid rgb(156, 15, 15);
+    font-size: 13px;
+    /* font-weight: normal; */
+    color: white;
+    text-align: center;
+    background-color: rgb(156, 15, 15);
+    width: 86px;
+    height: 38px;
+    line-height: 34px;
+    vertical-align: middle;
+}
+
+/* #acc1{
+    padding: 30px;
+} */
+
+#tb_acc_wrap1{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+/* #tab {
+    cursor: pointer;
+} */
+
+th {
+    padding: 15px 0;
+} 
+
+#tb_acc_wrap1 thead th {
+    border-bottom-color: #BBBBBB;
+    font-weight: bold;
+}
+
+#tb_acc_wrap1 th {
+    position: relative;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 15px 0;
+    font-size: 15px;
+    text-align: center;
+    line-height: 24px;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+    cursor: pointer;
+}
+
+#tb_acc_wrap1 td {
+    position: relative;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 15px 0;
+    font-size: 15px;
+    text-align: center;
+    line-height: 24px;
+}
+
+a {
+    color: #000;
+    text-decoration-line: none;
+    cursor: pointer;
+}
+
+#paging {
+    margin: 40px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#paging a {
+    padding: 5px;
+}
+
+#paging a:hover{
+    border-bottom: 1px solid #000;
+    font-weight: 650;
+}
+
+#paging a:focus{
+    border-bottom: 1px solid #000;
+    font-weight: 650;
+}
+
+#tab > tr:hover {
+	color: rgb(228, 178, 157);
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+

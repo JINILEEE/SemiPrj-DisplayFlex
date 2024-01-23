@@ -1,0 +1,335 @@
+
+main {
+    width: 75em;
+    margin: auto;
+}
+
+#contents{
+    height: 1000px;
+    padding: 10px 60px 60px 60px;
+    background-color: white;
+    /* text-align: center;  */
+}
+
+div#title_top {
+    /* margin: 0px 0px 20px; */
+    padding: 10px 0 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contents > #title_top {
+    /* margin-bottom: 20px; */
+    border-bottom: 1px solid #EEE;
+}
+
+#contents > #title_top > h1 {
+    margin-left: 20px;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+#title_top button {
+    margin-right: 20px;
+    height: 40px;
+    line-height: 35px;
+    /* padding-bottom: 4px; */
+    /* margin: 0 3px; */
+    min-width: 110px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 2px solid #7c0000;
+    font-size: 15.5px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgba(121, 0, 0, 0.326);
+}
+
+#contents > #tab_tit {
+    grid-column: span 3;
+}
+
+#contents > #tab_tit nav{
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 24px;
+    border-bottom: 1px solid #EEE;
+    padding: 17px 0px 17px;
+    margin-bottom: 15px
+}
+
+#contents > #tab_tit nav:focus {
+    border-bottom: 2px solid #000;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(113, 113, 113);
+    font-size: 17px;
+}
+
+#tab_con {
+    text-align: center; 
+}
+
+#tab_con > #faq_icon_wrap {
+    margin: 0px auto 25px;
+    padding: 12px;
+    border: 1px solid #EEEEEE;
+    display: flex;
+}
+
+/* 고객센터/FAQ ========================================================================================= */
+
+#faq_icon_wrap {
+    width: 94%;
+    margin: 0 auto; /* 가로 중앙 정렬을 위해 추가 */
+    position: relative;
+    /* background: #F5F5F5; */
+    border: 2px solid #dadada;
+    padding: 12px 13px;
+    margin-bottom: 48px;
+    white-space: nowrap;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* #faq_icon_wrap img {
+    width: 50px;
+    height: 50px;
+} */
+
+#faq_icon_wrap button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1.7px solid #dadada;
+    border-radius: 4px;
+    background: transparent no-repeat top 23px center;
+    width: 90px;
+    height: 100px;
+    padding: 20px;
+    font-size: 11.5px;
+    text-align: center;
+}
+
+/* #faq_icon_wrap button img {
+    padding: 3px;
+} */
+
+#faq_cate button:focus{
+    border: 2px solid pink;
+    border-bottom: 1.5px;
+}
+
+#top_tab1:focus {
+    width: 15px;
+    height: 15px;
+    border-bottom: 2px solid #000
+}
+
+#faq_icon_wrap #icon_01 img {
+    width: 45px;
+    height: 45px;
+}
+
+#faq_icon_wrap button:first-child {
+    margin-right: 0;
+}
+
+#search_wrap{
+    width: 92.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid #DDDDDD;
+    background-color: rgb(255, 246, 219);
+    padding: 22px 22px;
+    text-align: center; /* 자식 요소들을 가운데 정렬 */
+    margin: 0 auto;
+}
+
+#search_wrap fieldset{
+    margin: 0;
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    display: inline-block; /* 가운데 정렬을 위해 inline-block 사용 */
+}
+
+/* 옵션: 검색어 입력창과 버튼을 가로로 나란히 배치 */
+/* #search_wrap input[type="text"], #search_wrap button {
+    display: inline-block;
+} */
+
+/* legend{
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+} */
+
+#search_wrap input[type="text"] {
+    width: 440px;
+    margin: 6px 0 0 10px;
+}
+
+input[type="text"] {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 18px;
+    font-size: 13px;
+    border: 1px solid #DDD;
+}
+
+#search_wrap input[type=submit] {
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid rgb(156, 15, 15);
+    font-size: 13px;
+    /* font-weight: normal; */
+    color: white;
+    text-align: center;
+    background-color: rgb(156, 15, 15);
+    width: 86px;
+    height: 38px;
+    line-height: 34px;
+    vertical-align: middle;
+}
+
+#search_wrap #help_wrap {
+    float: right;
+    border-left: 1px solid rgb(187, 187, 187);
+    padding: 0 25px;
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+#search_wrap #help_wrap a {
+    text-decoration: underline;
+    margin-right: 24px;
+}
+
+a {
+    color: #000;
+    text-decoration-line: none;
+    cursor: pointer;
+}
+
+/* #tab> td a {
+    border-bottom: none;
+} */ 
+
+/* tr{
+    display: table-row;
+
+} */
+#acc{
+    padding: 22px 23px;
+}
+
+#tb_acc_wrap{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+/* #tab {
+    cursor: pointer;
+} */
+
+th {
+    padding: 15px 0;
+}
+
+#tb_acc_wrap thead th {
+    border-bottom-color: #BBBBBB;
+    font-weight: bold;
+}
+
+#tb_acc_wrap th {
+    position: relative;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 15px 0;
+    font-size: 15px;
+    text-align: center;
+    line-height: 24px;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+#tb_acc_wrap td {
+    position: relative;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 15px 0;
+    font-size: 15px;
+    /* font-weight: ; */
+    text-align: center;
+    line-height: 24px;
+}
+
+
+#faq_icon_wrap button:focus {
+    background-color: rgba(255, 221, 200, 0.909);
+}
+
+#paging {
+    margin: 60px;
+    font-size: 16px;
+}
+
+#paging a {
+    padding: 5px;
+}
+
+#paging a:hover{
+    border-bottom: 1px solid #000;
+    font-weight: 650;
+}
+
+#paging a:focus{
+    border-bottom: 1px solid #000;
+    font-weight: 650;
+}
+
+#tab > tr:hover {
+	color: rgb(228, 178, 157);
+	cursor: pointer;
+}
+
+
+
+
+
+

@@ -1,0 +1,127 @@
+table a {
+    text-decoration: none;
+	
+}
+
+.search-container, .info-list-container {
+    width: 84em;
+    background-color: white;
+    margin: auto;
+    margin-top: 2.5em;
+	padding: 2em;
+	border-radius: 40px;
+}
+
+.search-container *:not(:last-child), .info-list-container *:not(table > tfoot > tr > td > button) {
+    color: #29163C;
+}
+
+.h-2-5em {
+	height: 2.5em;
+}
+
+.w-6em {
+	width: 6em;
+}
+
+.w-3em {
+	width: 3em;
+}
+
+form {
+	text-align: center;
+}
+
+
+#dateInput {
+	border: 0.5px solid #e5e5e5;
+	height: 2.5em;
+	width: 9em;
+	text-align: center;
+	border-radius: 7px;
+}
+
+
+#startTime, #endTime {
+	width: 5em;
+	height: 2,5em;
+	border: 0.5px solid #e5e5e5;
+	text-align: center;
+	border-radius: 7px;
+}
+
+input[type='time']:not(.has-value):before{
+  color: lightgray;
+  content: '';
+}
+
+
+button {
+	color: white;
+}
+
+div.info-list-container > table {
+	border-collapse: collapse;
+	margin: auto;
+	width: 100%;
+}
+
+.w-50x {
+	width: 50px;
+}
+
+div.info-list-container > table th:nth-child(1), div.info-list-container > table td:nth-child(1) {
+	width: 40%;
+}
+
+div.info-list-container > table th:nth-child(2), div.info-list-container > table td:nth-child(2) {
+	width: 8%;
+}
+
+div.info-list-container > table th:nth-child(3), div.info-list-container > table td:nth-child(3) {
+	width: 15%;
+}
+
+div.info-list-container > table th:nth-child(4), div.info-list-container > table td:nth-child(4) {
+	width: 15%;
+}
+
+div.info-list-container > table th:nth-child(5), div.info-list-container > table td:nth-child(5) {
+	width: 8%;
+}
+
+
+div.info-list-container > table > thead > tr {
+
+	background-color: #29163C;
+}
+
+div.info-list-container > table > thead > tr > th {
+	text-align: center;
+	padding: 1.3em;
+	color: white;
+}
+
+div.info-list-container > table td {
+	padding: 1.3em;
+	text-align: center;
+}
+
+div.info-list-container > table td > a {
+	font-weight: 500;
+}
+
+div.info-list-container > table > tbody > tr:nth-child(2n) > td {
+    background-color: #FBF0E7;
+    border: 1px solid #FBF0E7;
+}
+
+
+
+.bg-1a {
+	background-color: #1a1a1a;
+}
+
+/* div.info-list-container > table > tfoot > tr button {
+
+} */

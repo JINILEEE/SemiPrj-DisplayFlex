@@ -1,0 +1,145 @@
+body {
+    display: grid;
+    justify-items: center;
+  }
+
+  .container {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    height: 600px;
+    text-align: center;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main {
+    display: grid;
+    grid-template-rows: 80px 150px 300px 50px;
+    width: 900px;
+  }
+
+  .main-box {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    grid-template-columns: 0.5fr 3fr 0.7fr 1.4fr 1fr;
+    width: 100%;
+    height: 80px;
+    background-color: #800020;
+    margin-top: 20px;
+  }
+
+  .main-box > div > img{
+    width: 60%;
+    height: auto;
+  }
+
+  .main-box > div:nth-child(2) {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+  }
+
+  .main-box > div:nth-child(3) {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    color: white;
+  }
+
+  .main-box > div:nth-child(4) {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+
+  .main-box > div:last-child {
+    width: 60%;
+    height: auto;
+    margin-left : 10px;
+    align-items: center;
+  }
+
+
+  .main-text {
+    display: grid;
+    align-items:center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: 3px solid gray;
+    margin: 5px;
+    margin-top: 20px;
+  }
+
+  .main-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .main-menu > div {
+    border: 1px solid none;
+    background-color: lightgray;
+    border-radius: 4px;
+  }
+
+  .main-menu-area {
+    display: grid;
+    grid-template-rows: 4fr 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-menu-area > div > img {
+    width: 70%;
+    height: auto;
+  }
+  
+  .main-menu-area > div:nth-child(2) {
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 5px;
+  }
+
+  .main-menu-area > div:last-child {
+    margin-left: 2px;
+    margin-right: 2px;
+    color: gray;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  footer{
+    width: 100%;
+    height: 50px;
+  }
+  
+button {
+	display: inline-block;
+    box-sizing: border-box;
+    background-color: lightgray;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+button:hover {
+	 background-color: rgba(128, 0, 32, 0.9);
+     color: white;
+}

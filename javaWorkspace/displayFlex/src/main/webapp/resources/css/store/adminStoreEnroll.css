@@ -1,0 +1,158 @@
+.product{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 12vw 70vw 12vw;
+}
+.product-main{
+    width: 100%;
+    background-color: white;
+    margin: 0px;
+    border-radius: 40px;
+	padding-top: 1.3em;
+	padding-bottom: 1.3em;
+	padding-left: 5em;
+	padding-right: 5em;
+	display: grid;
+	align-items: center;
+	grid-template-rows: 100px 1fr;
+}
+.product-main > div:first-child{
+	border-bottom: 3px solid #0C4667;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+#enroll > input[type="submit"]{
+	cursor: pointer;
+    background-color: #010101;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+	width: 100px;
+	height: 35px;
+	margin-left: 20px;
+}
+#delete > button{
+	cursor: pointer;
+    background-color: #B73232;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+	width: 100px;
+	height: 35px;
+	margin-left: 20px;
+}
+#product-detail{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 3fr 4fr;
+}
+#product-detail > div:first-child{
+	margin: 0;
+	height: 500px;
+	width: 90%;
+	text-align: center;
+	display: grid;
+	grid-template-rows: 10fr 1fr;
+}
+
+#imgPreview> i{
+	font-size: 250px;
+	margin-top: 120px;
+	color: white;
+}
+
+#imgPreview{
+	background-color: #D9D9D9;
+	object-fit: contain;
+}
+
+#product-detail> div >div:nth-child(2){
+	margin-top: 20px;
+}
+
+#detail{
+	display: grid;
+	grid-template-rows: 1fr 7fr;
+}
+#detail > div:first-child > input{
+	border: none;
+	border-radius: 7px;
+	background-color: #D9D9D9;
+	width: 200px;
+	height: 80%;
+	font-size: 25px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+#description{
+	border-top: 2px solid lightgray;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1fr 1fr 3fr 2fr;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+#description > div:nth-child(2) > input{
+	border: none;
+	border-radius: 7px;
+	background-color: #D9D9D9;
+	width: 200px;
+	height: 95%;
+	font-size: 25px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+#description > div:nth-child(4) > input{
+	border: none;
+	border-radius: 7px;
+	background-color: #D9D9D9;
+	width: 450px;
+	height: 95%;
+	font-size: 25px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+#description > div:nth-child(6) > textarea{
+	border: none;
+	border-radius: 7px;
+	background-color: #D9D9D9;
+	width: 450px;
+	height: 95%;
+	font-size: 25px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+#description > div:nth-child(8) > input{
+	border: none;
+	border-radius: 7px;
+	background-color: #D9D9D9;
+	width: 450px;
+	height: 95%;
+	font-size: 25px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+span{
+	font-size: 25px;
+	text-align: center;
+}
+
+#detail > div {
+	font-size: 25px;
+}
+
+#adminButton{
+	display: flex;
+	justify-content: center;
+}
+
+footer{
+	margin-top: 400px;
+}

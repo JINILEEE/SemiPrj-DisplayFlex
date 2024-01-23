@@ -1,0 +1,147 @@
+body {
+  display: grid;
+  justify-items: center;
+  font-family: 'Arial', sans-serif; /* Changed font for better readability */
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px; /* Increased padding for better spacing */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 1200px;
+  height: 900px;
+  text-align: center;
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: 20px auto;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 75px 50px 150px 500px 75px;
+  width: 1000px;
+  align-items: center;
+  justify-items: start;
+}
+
+.main-first {
+  width: 1000px;
+  font-weight: bold;
+  font-size: 28px;
+  color: #800020; /* Changed color for emphasis */
+  border-bottom: 3px solid #800020;
+  text-align: left;
+}
+
+.main-second {
+  font-size: 18px;
+  color: gray;
+  font-weight: bold;
+}
+
+.main-third {
+  border: 1px solid gray;
+  background-color: lightgray;
+  width: 1000px;
+  border-radius: 10px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  align-items: center;
+  margin-top: 20px; /* Added margin for better separation */
+}
+
+.main-third-t1,
+.main-third-t2 > button,
+.main-third-t3 {
+  padding: 10px; /* Added padding for better spacing */
+}
+
+.main-third-t1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: gray;
+}
+
+.main-third-t2 {
+  display: flex;
+  gap: 10px;
+}
+
+.main-third-t2 > button {
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Added transition for smooth effect */
+}
+
+.main-third-t2 > button:hover {
+  background-color: #800020;
+  color: white;
+  cursor: pointer;
+}
+
+.main-third-t3 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: gray;
+  flex-direction: row;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  gap: 20px;
+}
+
+table {
+  margin-top: 30px; /* Adjusted margin for better spacing */
+  width: 1000px;
+  height: 500px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  margin-top: 20px; /* Added margin for better separation */
+}
+
+td {
+  border-bottom: 1px solid gray;
+}
+
+thead > tr > td {
+  font-weight: bold;
+  font-size: 18px;
+  color: #800020; /* Changed color for emphasis */
+}
+
+button[type=submit] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px; /* Increased width for better visibility */
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  background-color: #800020;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Added transition for smooth effect */
+}
+
+button[type=submit]:hover {
+  background-color: white;
+  color: #800020;
+}

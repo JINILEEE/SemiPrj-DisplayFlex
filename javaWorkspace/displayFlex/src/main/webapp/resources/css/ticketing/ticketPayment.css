@@ -1,0 +1,529 @@
+@charset "UTF-8";
+
+.empty{
+    /* border: 1px solid black;
+    background-color: #FFE56B; */
+}
+
+/* body {
+	box-sizing: border-box;
+} */
+
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    color: inherit;
+    font: inherit;
+    text-align: inherit;
+    cursor: pointer;
+}
+
+
+main {
+    display: grid;
+    height: 1200px;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+}
+
+.ticketAccord{
+    width: 800px;
+}
+/* ---------------------------------STEP 메뉴 */
+#stepMenu_area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#couponList {
+    width: 100%;
+    /* border-collapse: separate;
+    border-spacing: 10px 10px; */
+}
+
+#couponList > thead {
+    border-bottom: 1px solid #A09F9F;
+    margin-bottom: 10px;
+}
+#step-coupon > p {
+    margin-top: 10px;
+    font-size: 25px;
+    color: #306791;
+    font-weight: bold;   
+}
+
+#couponList > thead > tr > th{
+    color: #A09F9F;
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+}
+
+#couponList > tbody > tr {
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#couponList > tbody > tr > td:first-child {
+    padding-left: 54px;
+    text-align: left;
+}
+
+.step-name {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.step-name > p:first-child{
+    font-size: 25px;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.step-name > span:last-child{
+    font-size: 20px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+/* 할인혜택 */
+#gradeDiscount{
+	margin-top : 25px;
+}
+
+#specialDiscount{
+	margin-top: 60px;
+}
+
+#gradeDiscount > div:first-child > span, #specialDiscount > div:first-child > span {
+    font-size: 25px;
+    margin-top: 10px;
+    color: #306791;
+    font-weight: bold;
+}
+
+#gradeDiscount > div:first-child, #specialDiscount > div:first-child {
+    border-bottom: 1px solid #A09F9F;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* 결제수단 */
+#step-payment > div:first-child{
+	border-bottom: 1px solid #A09F9F;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+#step-payment > div:first-child > h4 {
+    font-size: 25px;
+    margin-top: 10px;
+    color: #306791;
+    font-weight: bold;
+}
+
+
+#paymentMethod {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+}
+
+#paymentMethod > div {
+    padding: 4px;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#paymentMethod > div > button {
+/*	border: 1px solid rgb(229, 232, 235);*/
+	border: 1px solid #306791;
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/*결제방법 라디오버튼*/
+
+input[name="paymentGroup"] {
+    display: none;
+}
+
+
+.custom-radio {
+    display: inline-block;
+	border-radius: 10px;
+	width: 80%;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid black;
+    color: black;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+input[name="paymentGroup"]:checked + label {
+    border: 2px solid #3498db;
+
+}
+
+
+/*라디오버튼 끝*/
+
+#kakaoPay img {
+	width: 60px;
+    object-fit: cover;
+}
+
+#step-payment > div:last-child {
+	display: flex;
+	margin-top: 10px;
+	padding: 5px;
+	height: 75px;
+	background-color: rgb(192, 192, 192);
+	border-radius: 10px;
+/*	font-size: 100px;*/
+}
+
+
+
+#paymentMethod > div > button > span {
+}
+/* --------------------------------------STEP 메뉴 끝 */
+/*---------------------------- 우측 결제정보 시작 */
+
+#paymentAmount > div > div:nth-of-type(1), #discount > div > div:nth-of-type(1), #totalPayment > div > div:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#paymentInfo_area{
+    border-left: 1px solid black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 1000px;
+}
+
+#paymentInfo {
+    display: grid;
+    width: 250px;
+    height: 650px;
+    grid-row-gap: 10px;
+    position: sticky;
+    top: 0px;
+}
+
+#paymentAmount {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+#paymentAmount > div {
+    display: grid;
+    grid-template-rows: 0.7fr 2fr;
+    height: 40%;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#paymentAmount > div > div:first-child{
+    border-bottom: 1px solid black;
+    background-color: white;
+}
+
+#paymentAmount > div > div:last-child{
+    background-color: #474747;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 15px;
+}
+
+#paymentAmount > div > div:nth-of-type(2) > span:nth-of-type(1) {
+    color: #FFF;
+    text-align: right;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+#paymentAmount > div > div:nth-of-type(2) > span:nth-of-type(2) {
+    color: #FFF;
+    text-align: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+#discount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#discount > div {
+    display: grid;
+    height: 80%;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    grid-template-rows: 0.2155fr 0.2971fr 0.4873fr;
+}
+
+#discount > div > div:nth-child(1){
+    background-color: rgba(217, 231, 235, 0.49);
+    border-bottom: 1px solid black;
+}
+
+#discount > div > div:nth-child(2){
+    background-color: white;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#discount > div > div:nth-child(3){
+    
+    background-color: #3C464F;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 15px;
+}
+
+#discount > div > div:nth-child(3) > span:first-child {
+    color: #89E5FF;
+    text-align: right;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+#discount > div > div:nth-child(3) > span:last-child {
+    color: #89E5FF;
+    text-align: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+#totalPayment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#totalPayment > div {
+    display: grid;
+    height: 100%;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+/*    grid-template-rows: 59fr 234fr 94fr;*/
+    grid-template-rows: 59fr 94fr;
+    
+}
+
+
+#totalPayment > div > div:nth-of-type(1){
+    background-color: #F0EBD2;
+    border-bottom: 1px solid black;
+}
+
+/*#totalPayment > div > div:nth-of-type(2){*/
+/*    background-color: white;*/
+/*    border-bottom: 1px solid black;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+
+#totalPayment > div > div:nth-of-type(2){
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: #443128;
+    padding-right: 15px;
+}
+
+#totalPayment > div > div:nth-child(2) > span:first-child {
+    color: #FFE56B;
+    text-align: right;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+#totalPayment > div > div:nth-child(2) > span:last-child {
+    color: #FFE56B;
+    text-align: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+
+
+/* -------------------------------우측 결제 정보 끝 */
+
+/*-------------------------------------------- 하단 결제 바 */
+#selectInfo{
+    display: grid;
+    grid-auto-flow : column;
+    grid-template-columns: 2fr 1fr 2fr 1fr 1fr 2fr;
+    position: sticky;
+    z-index: 1000;
+    bottom: 0;
+    width: 100%;
+    min-width: 996px;
+    height: 128px;
+    background-color: #1d1d1c;
+
+}
+
+#selectInfo > div{
+    /* border: 1px solid #B73232; */
+    color: white;
+    height: 128px;
+}
+
+#posterImg {
+    height: 100%;
+    margin-left: 300px;
+}
+
+#ticket-movieName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#selectInfo > div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ticket-movieInfo, #ticket-seatInfo, #ticket-payInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} 
+
+#ticket-movieName > span, #ticket-payInfo > table > tbody > tr > td:last-child, #ticket-seatInfo > table > tbody > tr > td:last-child, #ticket-movieInfo > table > tbody > tr > td:last-child{
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+#ticket-payButton {
+	border: none;
+    margin-right: 200px;
+}
+
+#ticket-payButton > button {
+    border: none;
+    width: 154px;
+    height: 105px;
+    border-radius: 30px;
+    background: #B73131;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#ticket-payButton > button:hover{
+	cursor: pointer;
+}
+
+#ticket-payButton > button > span {
+	font-weight: bold;
+	font-size: 15px;
+	color: white;
+}
+
+#timeInfo{
+    margin-left: 10px;
+    color: white;
+}
+
+#dateInfo, #theaterInfo, #reservedInfo, #ticket-movieInfo td, #ticket-seatInfo td {
+	color: white;
+}
+
+/*------------------------------------ 하단 결제바 끝 */
+
+
+/* 푸터 */
+
+/*footer {*/
+/*    width: 100%;*/
+/*    height: 350px;*/
+/*    background-color: #f8f8f8;*/
+/*}*/
+
+.bi-arrow-right-circle-fill, .bi-arrow-right-circle-fill::before {
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+
+/* 스크롤 변경 */
+.accordion-body::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+
+.accordion-body::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 10px;
+    border: 4px solid transparent;
+    box-shadow: inset 6px 6px 0 rgba(34, 34, 34, 0.15);
+}
+
+.accordion-body::-webkit-scrollbar-thumb:hover {
+    border: 4px solid transparent;
+    box-shadow: inset 6px 6px 0 rgba(34, 34, 34, 0.3);
+}
+
+.accordion-body::-webkit-scrollbar-track {
+    box-shadow: none;
+    background-color: transparent;
+}

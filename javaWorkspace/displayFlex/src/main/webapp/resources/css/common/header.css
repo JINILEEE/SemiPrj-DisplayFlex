@@ -1,0 +1,160 @@
+body {
+    
+    width: 100vw;
+    padding: 0px;
+    margin: 0%;
+    background-image: url("/cinema/resources/image/background/retroBackgroundLast.png");
+    background-repeat: repeat;
+    position: relative;
+}
+
+#header-area{
+    z-index: 10;
+    top: 0px;
+    width: 100VW;
+    height: 200px;
+    background-color: transparent;
+    position: sticky;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+#header-area > div:first-child {
+    margin: opx;
+    width: 100vw;
+    height: 40px;
+}
+
+#header-area > div:first-child > img{
+    margin: opx;
+    width: 100vw;
+    height: 40px;
+}
+
+.topMenu{
+    margin: 0px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 400px 600px 400px 300px;
+    place-items: center;
+}
+
+.topMenu > div:first-child > a img{
+	margin: 0;
+    width: 150px;
+    height: 150px; 
+}
+
+.sideMenu{
+    width: 170px;
+    height: 580px;
+    z-index: 30;
+    position: fixed;
+    top: 200px;
+    right: -1000px; /* Initially off-screen */
+    transition: right 1s ease-in-out; /* Transition for smooth animation */
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-bottom-left-radius: 10px;
+}
+.sideMenu ul{
+    width: 170px;
+    height: 550px;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.sideMenu ul li a{
+    color: #010101;
+}
+
+.sideMenu ul li i{
+	color:#800020;
+}
+
+.sideMenu ul li:hover{
+    cursor: pointer;
+    background-color: #dac1c1;
+}
+
+.sideMenu li{
+	display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 30px;
+    list-style: none;
+    width: 170px;
+    height: 70px;
+    font-size: 18px;
+}
+
+.sideMenu li > button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding-bottom: 10px;
+    color: #0C4667;
+    font-size: 40px;
+}
+
+.search{
+    position: relative;
+    display: flex;
+    width: 400px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search > div > button{
+    cursor: pointer;
+    position: absolute;
+    top: 53px;
+    left: 330px;
+    width: 45px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #0C4667;
+    height: 45px;
+    margin: 0px;
+}
+
+#search{
+    outline: none;
+    width: 380px;
+    height: 42px;
+    padding-left: 25px;
+    font-size: 18px;
+    border: 3px solid #0C4667;
+    border-radius: 25px;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5px;
+    gap:15px;
+}
+.icon > button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding-bottom: 10px;
+    color: #0C4667;
+    font-size: 40px;
+}
+
+.sideMenu > ul > li > a{
+	text-decoration: none;
+}
+
+
+
+
+
+
+

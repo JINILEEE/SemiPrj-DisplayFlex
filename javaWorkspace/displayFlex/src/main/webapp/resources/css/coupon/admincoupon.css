@@ -1,0 +1,163 @@
+.product{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 12vw 70vw 12vw;
+}
+
+.product-main{
+    width: 110%;
+    background-color: white;
+    margin: 0px;
+    border-radius: 40px;
+	
+	padding-bottom: 1em;
+	padding-left: 5em;
+	padding-right: 5em;
+	display: grid;
+	align-items: center;
+	grid-template-rows: 100px 1fr;
+}
+
+.product-main > div:first-child{
+	border-bottom: 3px solid #0C4667;
+	/* width: 100%; */
+	display: flex;
+	align-items: center;
+}
+
+#enroll > input[type="submit"]{
+	cursor: pointer;
+    background-color: #010101;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+	width: 100px;
+	height: 35px;
+	margin-left: 20px;
+}
+
+#delete > button{
+	cursor: pointer;
+    background-color: #B73232;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+	width: 100px;
+	height: 35px;
+	margin-left: 20px;
+}
+
+/* #product-detail{
+	width: 100%;
+	display: grid;
+	
+} */
+
+#product-detail > div:first-child{
+	margin: 0;
+	background-color: #D9D9D9;
+	height: 30em;
+	width: 100%;
+	text-align: center;
+}
+
+
+
+#detail{
+	display: grid;
+	
+}
+
+#detail > div:first-child > input{
+	border: none;
+	border-radius: 7px;
+	background-color: #D9D9D9;
+	width: 200px;
+	height: 80%;
+	font-size: 25px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+
+
+#description{
+	border-top:  solid lightgray;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1fr 1fr 3fr 2fr;
+	padding-top: 1em;
+	padding-bottom: 100px;
+	margin-top: 0.5em;
+}
+
+
+
+#description > div:nth-child(2) > input{
+    
+	border: none;
+	border-radius: 7px;
+	/* background-color: #D9D9D9; */
+	width: 85%;
+	height: 95%;
+	font-size: 25px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+#description > div {
+    margin-bottom: 0.1em;
+}
+
+#description > div:nth-child(4) > input{
+	border: none;
+	border-radius: 7px;
+	/* background-color: #D9D9D9; */
+	width: 450px;
+	height: 95%;
+	font-size: 25px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+#description > div:nth-child(6) > textarea{
+	border: none;
+	border-radius: 7px;
+	/* background-color: #D9D9D9; */
+	width: 400px;
+	height: 95%;
+	font-size: 25px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+#description > div:nth-child(8) > input{
+	border: none;
+	border-radius: 7px;
+	/* background-color: #D9D9D9; */
+	width: 50%;
+	height: 50%;
+	font-size: 25px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+span{
+	font-size: 15px;
+	text-align: center;
+}
+
+#adminButton{
+	display: flex;
+	justify-content: center;
+}
+
+#diskind {
+	
+	
+   
+    
+}

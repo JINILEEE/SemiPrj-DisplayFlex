@@ -1,0 +1,152 @@
+body {
+    display: grid;
+    justify-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 0.3fr 0.1fr;
+    background-color: #fff;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1100px;
+    height: 1000px;
+    text-align: center;
+    justify-items: center;
+}
+
+.first{
+	width: 95%;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 3fr 1fr;
+}
+
+table {
+    width: 1000px;
+    height: 650px;
+    border-top : 3px solid gray;
+    border-top-style: solid;
+    border-collapse: collapse;
+}
+
+td {
+	border-top : 1px solid gray;
+    font-size: 24px;
+    padding: 0;
+}
+
+tr > td:nth-child(1){
+	width: 180px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: lightgray;
+}
+
+tr > td:nth-child(2){
+    width: 350px;
+}
+
+tr > td:nth-child(3){
+    width: 150px;
+}
+
+tbody > tr:last-child > td {
+    border-bottom :3px solid black;
+}
+h1 {
+    color: #333;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 24px;
+    color: gray;
+    display: flex;
+    margin-left: 20px;
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+	display: inline-block;
+    box-sizing: border-box;
+    background-color: lightgray;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+	 background-color: rgba(128, 0, 32, 0.9);
+     color: white;
+}
+
+#password, #confirmPassword {
+    margin-bottom: 16px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+}
+
+button:hover {
+    background-color: #800020;
+    color: white;
+}
+
+#message {
+    display: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: red;
+}
+
+.refer {
+    font-size: 16px;
+    color: gray;
+}
+
+.last {
+    font-size: 10px;
+    color : gray;
+    text-align: left;
+    display: block;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+}

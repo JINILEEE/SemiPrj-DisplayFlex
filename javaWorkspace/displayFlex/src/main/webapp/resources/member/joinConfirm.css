@@ -1,0 +1,83 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap {
+    background-color: white;
+    margin: 0px;
+    border-radius: 40px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: grid;
+    align-items: center;
+    width: 800px;
+    height: 450px;
+}
+
+.wrap-main {
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 4fr 1fr;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+img {
+    width: 90%;
+    height: auto;
+}
+
+.wrap-main > div:nth-child(2) {
+    text-align: left;
+    font-weight: bold;
+}
+
+.wrap-main > div:nth-child(3) {
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap-main > div:last-child {
+    display: flex;
+    margin-top: 20px;
+    height: 50px;
+    justify-content: center;
+}
+
+.wrap-main-first-font {
+    font-size : 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.wrap-main-second-font {
+    font-size : 20px;
+    color: gray;
+}
+
+input[type=button] {
+	background-color: lightgray;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px; /* 여백 추가 */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 20px;
+}
+
+input[type=button]:hover {
+	 background-color: rgba(128, 0, 32, 0.9);
+     color: white;
+}

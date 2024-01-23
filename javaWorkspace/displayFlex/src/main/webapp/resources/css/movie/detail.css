@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+.title {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.add-form  {
+	padding: 100px;
+	width: 70em;
+	margin: auto;
+	margin-top: 65px;
+	border-radius: 40px;
+}
+
+.bg-w {
+	background-color: white;
+}
+
+
+ table {
+	margin: auto;
+	width: 80%
+}
+
+table tr > td:nth-child(1), table tr > td:nth-child(3) {
+	width: 10%;
+}
+table tr > td:nth-child(2n) {
+	width: 30%;
+}
+
+table tr > td:nth-child(5){
+	width: 20%
+}
+
+.add-form td {
+	color: #29163C;
+	height: 70px;
+}
+
+.title {
+	display: flex;
+	align-self: center;
+}
+
+.admin-container {
+	margin-left: 30px;
+}
+
+.admin-btn {
+
+	font-size: 22px;
+	margin: 0.5em;
+	border: none;
+	width: 4.2em;
+	height: 1.8em;
+	border-radius: 5px;
+}
+
+.bg-abc95f {
+	color: #29163C;
+	background-color: #abc95f;
+}
+
+.bg-b73232 {
+	color: white;
+	background-color: #b73232;
+}
+
+.story {
+	padding: 20px;
+	background-color: #fffbdc;
+}
+
+#reserve-td {
+	text-align: center;
+}
+
+.jh-hr {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#reserve-td > button {
+	color: #29163C;
+	width: 75%;
+	height: 50px;
+	border: none;
+	font-size: 20px;
+	padding: 10px;
+	border-radius:30px;
+}
+
+.df {
+	display: flex;
+}
+
+.js-sa {
+	justify-content: space-around;
+}
+
+.fd-cr {
+	flex-direction: column-reverse;
+}
+
+button:hover, .review-submit:hover {
+  transform: scale(1.1); /* 1.1배 크기로 확대 */
+  cursor: pointer;
+}
+
+.title-container {
+	width: 90%;
+}
+
+.review-list-container {
+	margin: auto;
+	width: 90%;
+}
+
+.review-container {
+	width: 70em;
+	margin: auto;
+	margin-top: 3em;
+	padding: 3em;
+	border-radius: 40px;
+}
+
+.review-container > hr.jh-hr {
+	
+	margin:auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 96%;
+}
+
+.content-container {
+	background-color: thistle;
+}
+
+
+.rating-container {
+    text-align: center;
+}
+
+
+.title-container > form >  div {
+	width: 100%;
+	height: 5em;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.rating__star {
+   cursor: pointer;
+   color: #dabd18b2;
+}
+
+textarea {
+	font-size: 16px;
+    width: 60%;
+    height: 5em;
+    border: 1px solid black;
+    resize: none;
+}
+
+.title-container > form >  div > .review-submit {
+	height: 100%;
+}
+
+.bg-f0f2f2 {
+	background-color: #f0f2f2;
+}

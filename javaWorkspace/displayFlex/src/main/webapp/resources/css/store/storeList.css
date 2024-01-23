@@ -1,0 +1,147 @@
+.store{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 12vw 70vw 12vw;
+}
+
+.store-main{
+    width: 100%;
+    background-color: white;
+    margin: 0px;
+    border-radius: 40px;
+	padding-top: 1.3em;
+	padding-bottom: 1.3em;
+	padding-left: 5em;
+	padding-right: 5em;
+	display: grid;
+	align-items: center;
+	grid-template-rows: 100px 50px 3fr;
+}
+#enroll > button{
+	cursor: pointer;
+    background-color: #010101;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+	width: 100px;
+	height: 35px;
+	margin-left: 20px;
+}
+
+#top > #delete > button{
+	cursor: pointer;
+    background-color: #B73232;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+	width: 100px;
+	height: 35px;
+	margin-left: 20px;
+}
+
+.store-main > div:first-child{
+	border-bottom: 3px solid #0C4667;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#enroll > button{
+	cursor: pointer;
+    background-color: #010101;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+	width: 100px;
+	height: 35px;
+	margin-left: 20px;
+}
+
+#delete > button{
+	cursor: pointer;
+    background-color: #B73232;
+    border: none;
+    border-radius: 5px;
+    color: #010101;
+    font-size: 20px;
+	width: 100px;
+	height: 35px;
+	margin-left: 20px;
+}
+
+h1 {
+	color: #0C4667;
+	font-size: 45px;
+	margin: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#smallMenu > div > button >span:hover{
+	cursor: pointer;
+	color: #abc95f;
+}
+
+#smallMenu > div > button{
+	border: none;
+	background-color: transparent;
+	font-size: 20px;
+	color: #0C4667;
+}
+
+
+.store-main > div:nth-child(2){
+	border-bottom: 2px solid #0C4667;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	justify-items: center;
+	font-size: 20px;
+	color: #0C4667;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.itemPhoto{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	place-items: center;
+}
+.itemPhoto> div{
+	margin-top: 60px;
+	margin-bottom: 30px;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.itemPhoto > div >a> img {
+	transition: filter 0.3s ease;
+}
+.itemPhoto > div > a> img:hover {
+	cursor: pointer;
+	color: rgb(214, 214, 214);
+	filter: brightness(80%);
+}
+.itemPhoto > div > a {
+	text-decoration: none;
+}
+#first{
+	font-size: 22px;
+	color: #0C4667;
+}
+#first:hover{
+	cursor: pointer;
+}
+
+#third{
+	font-size: 21px;
+}
+
+footer{
+		margin-top:200px;
+	}

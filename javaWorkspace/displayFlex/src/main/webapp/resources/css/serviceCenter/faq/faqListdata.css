@@ -1,0 +1,75 @@
+
+#tb_acc_wrap{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+th {
+    padding: 15px 0;
+}
+
+#tb_acc_wrap thead th {
+    border-bottom-color: #BBBBBB;
+    font-weight: bold;
+}
+
+#tb_acc_wrap th {
+    position: relative;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 15px 0;
+    font-size: 15px;
+    text-align: center;
+    line-height: 24px;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+#tb_acc_wrap td {
+    position: relative;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 15px 0;
+    font-size: 15px;
+    /* font-weight: ; */
+    text-align: center;
+    line-height: 24px;
+}
+
+
+#faq_icon_wrap button:focus {
+    background-color: rgba(255, 221, 200, 0.909);
+}
+
+#paging {
+    margin: 40px;
+    font-size: 16px;
+}
+
+#paging a {
+    padding: 5px;
+}
+
+#paging a:hover{
+    border-bottom: 1px solid #000;
+    font-weight: 650;
+}
+
+#paging a:focus{
+    border-bottom: 1px solid #000;
+    font-weight: 650;
+}
+
+#tab > tr:hover {
+	color: rgb(228, 178, 157);
+	cursor: pointer;
+}

@@ -1,0 +1,27 @@
+/* 
+
+
+
+
+
+.vip{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 13em 74em 13em;
+}
+
+.vip_content{
+    width: 100%;
+    background-color: white;
+    margin: 0px;
+    border-radius: 40px;
+	padding-top: 1.3em;
+	padding-bottom: 1.3em;
+	padding-left: 5em;
+	padding-right: 5em;
+	display: grid;
+	align-items: center;
+	grid-template-rows: 100px 50px 3fr;
+} */

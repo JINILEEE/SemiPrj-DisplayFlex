@@ -1,0 +1,113 @@
+.container {
+    display: grid;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 700px;
+    height: auto;
+    border-top: 3px solid gray;
+    border-top-style: solid;
+    border-collapse: collapse;
+}
+
+td {
+    border-top: 1px solid gray;
+    transition: background-color 0.3s ease-in-out;
+}
+
+td:hover {
+    background-color: #f2f2f2;
+}
+
+tr > td:nth-child(1) {
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+tbody > tr:last-child > td {
+    border-bottom: 3px solid black;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #4caf50;
+}
+
+.submit-btn {
+    width: 100px;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+#message {
+    display: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: red;
+}
+
+footer {
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+img {
+    width: 90%;
+    height: auto;
+}
+
+.join{
+	background-color: lightgray;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px; /* 여백 추가 */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 24px;
+}
+
+.join:hover {
+	 background-color: rgba(128, 0, 32, 0.9);
+     color: white;
+}

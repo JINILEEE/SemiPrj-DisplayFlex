@@ -1,0 +1,466 @@
+@charset "UTF-8";
+
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    color: inherit;
+    font: inherit;
+    text-align: inherit;
+    cursor: pointer;
+}
+
+body {
+    overflow-y: overlay; 
+}
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+#movieList::-webkit-scrollbar ,#dateList::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+
+#movieList::-webkit-scrollbar-thumb ,#dateList::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 10px;
+    border: 4px solid transparent;
+    box-shadow: inset 6px 6px 0 rgba(34, 34, 34, 0.15);
+}
+
+#movieList::-webkit-scrollbar-thumb:hover ,#dateList::-webkit-scrollbar-thumb:hover {
+    border: 4px solid transparent;
+    box-shadow: inset 6px 6px 0 rgba(34, 34, 34, 0.3);
+}
+
+#movieList::-webkit-scrollbar-track ,#dateList::-webkit-scrollbar-track {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+
+ul, li {
+    padding: 0;
+    list-style: none;
+}
+
+/* * {
+    box-sizing: border-box;
+    font-family: 'Tahoma','돋움',dotum,Nanum Gothic,sans-serif; 
+} */
+body{
+    margin: 0;
+}
+
+header > nav {
+    height: 220px;
+/*    background-color: teal;*/
+}
+
+#section1{
+/*    background-color: lightblue;*/
+    display: flex;
+    height: 100%;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#ticketing1-back {
+    background: white;
+    width: 1250px;
+    height: 583.25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#ticketing1{
+    display: grid;
+    /* width: 1150px;
+    height: 100%; */
+    grid-template-columns: 380px 70px 250px 70px 380px;
+    /* background-color: lightcoral; */
+}
+
+#movieList, #dateList{
+    background-color: #f2f2f2;
+    height: 400px;
+    display: grid;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: start;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.ticketingMovie {
+    width: 365px;
+}
+
+.ticketingMovie > button{
+    position: relative;
+    height: 36px;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+}
+
+.ticketingDate > button{
+    position: relative;
+    height: 36px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticketingMovie > button > img {
+    height: 36px;
+    padding-left: 40px;
+}
+
+.text:visited, .text:link{
+    color: black;
+    text-decoration: none;
+}
+
+.ticketingMovie:hover, .ticketingDate:hover{
+/*    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);*/
+    box-shadow: inset 0px 0px 20px 0px rgb(190 168 168 / 30%);
+}
+
+.ticketingMovie > div:first-child{
+    margin-left: 30px;
+}
+
+
+.ticketingMovie > button > span, .ticketingDate > button > span{
+    vertical-align: 11px;
+}
+
+
+.ticketingDate {
+    height: 36px;
+    width: 235px;
+    background-color: #f2f2f2;
+}
+
+
+#movie {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-rows: 41.25px 1fr;
+}
+
+#date {
+    display: none;
+    grid-row-gap: 10px;
+    grid-template-rows: 41.25px 1fr;
+}
+
+#movie > div:nth-of-type(1), #date > div:nth-of-type(1), #time > div:nth-of-type(1){
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#time{
+    display: none;
+    grid-template-rows: 41.25px 1fr;
+    grid-row-gap: 10px;
+    max-height: 483.25px;
+    max-width: 380px;
+} 
+
+#theater{
+	    display: grid;
+    grid-gap: 10px;
+}
+
+#theater1, #theater2, #theater3, #theater4 {
+	border: 1px solid #ab9e9e;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gray;
+    display: grid;
+/*    grid-template-rows: 0.8fr 1fr 1fr;*/
+}
+
+#arrow1{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#arrow2{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#section2{
+    display: flex;
+    height: 600px;
+    justify-content: center;
+ 
+    flex-shrink: 0;
+/*    background-color: lightblue;*/
+}
+
+.menuName {
+    background-color: #333333;
+    height: 41.25px;
+}
+#movie > div:first-child > span, #date > div:first-child > span, #time > div:first-child > span{
+    color: white;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+#theater1 > div:first-child, #theater2 > div:first-child, #theater3 > div:first-child, #theater4 > div:first-child {
+    border-bottom: 1px solid #ab9e9e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#theater1 > div:first-child > span, #theater2 > div:first-child > span, #theater3 > div:first-child > span, #theater4 > div:first-child > span{
+    font-weight: bold;
+}
+
+#theater1 > div:nth-of-type(2), #theater2 > div:nth-of-type(2), #theater3 > div:nth-of-type(2), #theater4 > div:nth-of-type(2) {
+    margin-bottom: 5px;
+}
+#theater1 > div:nth-of-type(3), #theater2 > div:nth-of-type(3), #theater3 > div:nth-of-type(3), #theater4 > div:nth-of-type(3) {
+    margin-top: 5px;
+}   
+
+#theater1_time, #theater2_time, #theater3_time, #theater4_time  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+} 
+
+.selectTime{
+	width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#theater1_time > div, #theater2_time > div, #theater3_time > div, #theater4_time > div {
+    border-radius: 10px;
+    background-color:#c3c3c3;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+
+
+#theater1_time > div:hover, #theater2_time > div:hover, #theater3_time > div:hover, #theater4_time > div:hover {
+    font-weight: bold;
+}
+
+#theater1_time > div > button, #theater2_time > div > button, #theater3_time > div > button, #theater4_time > div > button {
+    position: relative;
+}
+
+
+
+#ticketing2{
+    display: none;
+    width: 1150px;
+    height: 400px;
+    margin-top: 100px;
+    background-color: white;
+    border-radius: 10px;
+    /* flex-shrink: 0; */
+}
+
+#ticketing2_screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 70%;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background: url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/step2/screen_bg.png) repeat-x left;
+}
+
+#ticketing2_screen > span {
+	font-size: 20px;
+}
+
+#ticketing2_seat{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 6fr 1fr;
+    height: 355px;
+}
+
+#seat_area{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    margin: 40px 85px 40px 221px;
+    /* border: 1px solid black; */
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.seatRow{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.seat_A, .seat_B, .seat_C, .seat_D {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9D9D9;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.seat_A:hover, .seat_B:hover, .seat_C:hover, .seat_D:hover{
+    background-color: #EDD711
+}
+
+.seat_A > button, .seat_B > button, .seat_C > button,  .seat_D > button   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#seat_description {
+	display: flex;
+    align-items: flex-end;
+}
+
+#seat_description > img {
+    width: 70%;
+    margin: auto;
+}
+.seat{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(40px, 40px)); */
+    grid-template-columns: repeat(13, 1fr);
+    grid-gap: 10px;
+    height: 40px;
+}
+
+
+/* 하단 결제 바 */
+#selectInfo{
+    display: grid;
+    grid-auto-flow : column;
+    grid-template-columns: 2fr 1fr 2fr 1fr 1fr 2fr;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    min-width: 996px;
+    height: 128px;
+    background-color: #1d1d1c;
+}
+
+#selectInfo > div{
+    /* border: 1px solid #B73232; */
+    color: white;
+    height: 128px;
+}
+
+#posterImg {
+    height: 100%;
+    margin-left: 300px;
+}
+
+#ticket-movieName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#selectInfo > div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ticket-movieInfo, #ticket-seatInfo, #ticket-payInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+#ticket-movieName > span, #ticket-payInfo > table > tbody > tr > td:last-child, #ticket-seatInfo > table > tbody > tr > td:last-child, #ticket-movieInfo > table > tbody > tr > td:last-child{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#ticket-payButton {
+	border: none;
+    margin-right: 200px;
+    
+}
+
+#ticket-payButton > form > button {
+    border: none;
+    width: 154px;
+    height: 105px;
+    border-radius: 30px;
+    background: #625F5F;
+    display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#ticket-payButton > form > button:hover{
+	cursor: pointer;
+}
+
+#ticket-payButton > form > button > span {
+	font-weight: bold;
+	font-size: 15px;
+	color: white;
+}
+
+#timeInfo {
+	margin-left: 10px;
+}
+
+.bi-check-circle-fill, .bi-check-circle-fill::before{
+	font-size: 50px;
+	margin-bottom: 5px;
+
+}
